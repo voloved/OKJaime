@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+body {text-align: center; background-color: red;}
+h1 {
+        font-size: 75px;
+    color: green;
+    left: 0;
+    line-height: 200px;
+    margin: auto;
+    margin-top: -100px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+marquee    {
+        font-size: 10px;
+    color: yellow;
+    left: 0;
+    line-height: 305px;
+    margin: auto;
+    margin-top: -100px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+</style>
+
+<body>
+<h1 id="head"></h1>
+<marquee id="scroll"></marquee>
+
+<script>
+var header;
+var scroller;
+switch (new Date().getDay()) {
+  case 0:
+    <!--Sunday-->
+    header = "I Really Like Julio";
+	scroller = "It's true"
+    break;
+  case 1:
+    <!--Monday-->
+    header = "I Love Julio";
+	scroller = "no homo tho"
+    break;
+  case 2:
+    <!--Tuesday-->
+    header = "I Appreciate Julio";
+	scroller = "obviously"
+    break;
+  case 3:
+    <!--Wednesday-->
+    header = "I Enjoy Julio";
+	scroller = "the quick brown fox jumped over the lazy dog"
+    break;
+  case 4:
+    <!--Thursday-->
+    header = "I Hate Julio";
+	scroller = "Just kidding, that's not true"
+    break;
+  case 5:
+    <!--Friday-->
+    header = "I Am Cool With Julio";
+	scroller = "really"
+    break;
+  case  6:
+    <!--Saturday-->
+    header = "I School Julio In Mario Kart";
+	scroller = "Rainbow Road 200cc, auto-steering on"
+}
+document.getElementById("head").innerHTML = header;
+document.getElementById("scroll").innerHTML = scroller;
+</script>
+
+</body>
+</html>
