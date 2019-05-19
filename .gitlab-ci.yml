@@ -1,0 +1,8 @@
+pages:
+  script:
+  - uname
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
