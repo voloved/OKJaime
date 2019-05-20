@@ -1,8 +1,6 @@
-  stage: deploy
+pages:
   script:
-  - mkdir .public
-  - cp -r * .public
-  - mv .public public
+  - uname
   artifacts:
     paths:
     - public
