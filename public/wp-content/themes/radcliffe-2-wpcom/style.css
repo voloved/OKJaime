@@ -1376,11 +1376,12 @@ textarea {
 	text-align: center;
 	display: flex;
 	align-items: center;
+	width : 100%;
 }
 
 .hero-area.has-post-thumbnail {
-	background-position: 0% 50%;
-	background-size: contain;
+	background-position: 50% 50%;
+	background-size: 100%;
 	background-repeat:no-repeat;
 }
 
@@ -2641,7 +2642,7 @@ object {
 	}
 
 	.hero-area {
-		max-height: 684px;
+		max-height: 1000px;
 	}
 
 	.hero-area-wrapper {
