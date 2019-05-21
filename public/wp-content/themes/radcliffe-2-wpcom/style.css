@@ -1370,8 +1370,8 @@ textarea {
 ## Hero Area
 --------------------------------------------------------------*/
 .hero-area {
-	background: #888;
-	color: #fff;
+	/*background: #888;
+	color: #fff;*/
 	position: relative;
 	text-align: center;
 	display: flex;
@@ -1379,12 +1379,13 @@ textarea {
 }
 
 .hero-area.has-post-thumbnail {
-	background-position: 50% 50%;
-	background-size: cover;
+	background-position: 0% 50%;
+	background-size: contain;
+	background-repeat:no-repeat;
 }
 
 .hero-area:before {
-	background: #111111;
+	/*background: #111111;
 	bottom: 0;
 	content: "";
 	display: block;
@@ -1392,7 +1393,7 @@ textarea {
 	opacity: 0.4;
 	position: absolute;
 	right: 0;
-	top: 0;
+	top: 0;*/
 }
 
 .hero-area-wrapper {
