@@ -50,7 +50,15 @@
 	max-width: 1200px;
 	width: 446px;
 }
-</style><a href="./index.html" class="custom-logo-link" rel="home"><img width="1935" height="360" src="./wp-content/uploads/images/logo-1.png" class="custom-logo" alt="" sizes="(max-width: 1935px) 100vw, 1935px" /></a>
+</style><a href="./index.html" class="custom-logo-link" rel="home"><img width="1935" height="360" img id="myImg" src="./wp-content/uploads/images/logo-1.png" class="custom-logo" alt="" sizes="(max-width: 1935px) 100vw, 1935px" /></a>
+<script>
+var date = new Date();
+if (date.getMonth() == 2 && date.getDate() == 26)
+<!--If month is March and day is 26-->
+{
+  document.getElementById("myImg").src="./wp-content/uploads/images/logo-2.png";
+}
+</script>
 				<div class="site-branding-text">
 											<p class="site-title"><a href="./index.html" rel="home"></a></p>
 											<p class="site-description">The Acclaimed Faime of the Aimless Jaime</p>
@@ -112,44 +120,51 @@
 
 	<div class="entry-content">
 		
-<p style="text-align:left"><p style="text-align:left"><span id="head"></span>, my name is Jaime and I&#8217;m just your typical Midwestern fellow. If you&#8217;re a true dime and into making a good time, taking a crude rhyme, and faking a mood fine, then I&#8217;m the best you could find. </p>
+<p style="text-align:left"><p style="text-align:left"><span id="head"></span> my name is Jaime and I&#8217;m just your typical Midwestern fellow. If you&#8217;re a true dime and into making a good time, taking a crude rhyme, and faking a mood fine, then I&#8217;m the best you could find. </p>
 
 <script>
 var header;
 var scroller;
-switch (new Date().getDay()) {
-  case 0:
-    <!--Sunday-->
-    header = "Buenos aires chicas";
-    break;
-  case 1:
-    <!--Monday-->
-    header = "Howdy-doo cutie-poo";
-    break;
-  case 2:
-    <!--Tuesday-->
-    header = "Omelette au fromage de chèvre";
-    break;
-  case 3:
-    <!--Wednesday-->
-    header = "I know it's hump day. I know you need some excitement in your life. This is where I come in";
-    break;
-  case 4:
-    <!--Thursday-->
-    header = "Buenos aires chicas";
-    break;
-  case 5:
-    <!--Friday-->
-    header = "It's Friday and I'm ready to get wiley";
-    break;
-  case  6:
-    <!--Saturday-->
-    header = "Howdy-doo cutie-poo";
+var date = new Date();
+if (date.getMonth() == 2 && date.getDate() == 26)
+<!--If month is March and day is 26-->
+{
+header = "If you're like me, it's your birthday today;";
+}
+else
+    {
+    switch (date.getDay()) {
+      case 0:
+        <!--Sunday-->
+        header = "Buenos aires chicas,";
+        break;
+      case 1:
+        <!--Monday-->
+        header = "Howdy-doo cutie-poo,";
+        break;
+      case 2:
+        <!--Tuesday-->
+        header = "Omelette au fromage de chèvre,";
+        break;
+      case 3:
+        <!--Wednesday-->
+        header = "I know it's hump day. I know you need some excitement in your life. This is where I come in,";
+        break;
+      case 4:
+        <!--Thursday-->
+        header = "Buenos aires chicas,";
+        break;
+      case 5:
+        <!--Friday-->
+        header = "It's Friday and I'm ready to get wiley,";
+        break;
+      case  6:
+        <!--Saturday-->
+        header = "Howdy-doo cutie-poo,";
+    }
 }
 document.getElementById("head").innerHTML = header;
 </script></p>
-
-
 
 <div class="wp-block-image"><figure class="alignleft is-resized"><img src="./wp-content/uploads/images/jamezwithazee.jpg" alt="Jaime with Jamez" class="wp-image-231" width="222" height="164" sizes="(max-width: 222px) 100vw, 222px" /><figcaption>Chilling at the rock with Jamez</figcaption></figure></div>
 

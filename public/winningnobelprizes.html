@@ -85,9 +85,17 @@
 	max-width: 1200px;
 	width: 446px;
 }
-</style><a href="./" class="custom-logo-link" rel="home"><img src="./wp-content/uploads/images/logo-1.png" class="custom-logo" alt="" sizes="(max-width: 1935px) 100vw, 1935px" width="1935" height="360"></a>
+</style><a href="./index.html" class="custom-logo-link" rel="home"><img width="1935" height="360" img id="myImg" src="./wp-content/uploads/images/logo-1.png" class="custom-logo" alt="" sizes="(max-width: 1935px) 100vw, 1935px" /></a>
+<script>
+var date = new Date();
+if (date.getMonth() == 2 && date.getDate() == 26)
+<!--If month is March and day is 26-->
+{
+  document.getElementById("myImg").src="./wp-content/uploads/images/logo-2.png";
+}
+</script>
 				<div class="site-branding-text">
-											<p class="site-title"><a href="./" rel="home"></a></p>
+											<p class="site-title"><a href="./index.html" rel="home"></a></p>
 											<p class="site-description">The Acclaimed Faime of the Aimless Jaime</p>
 									</div><!-- .site-branding-text -->
 
