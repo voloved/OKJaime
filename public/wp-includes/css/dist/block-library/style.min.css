@@ -799,7 +799,8 @@
 }
 
 .wp-block-image img {
-	max-width: 100%
+	max-width: 100%;
+	border-radius:10px
 }
 
 .wp-block-image.aligncenter {
