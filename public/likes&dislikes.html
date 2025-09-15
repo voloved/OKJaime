@@ -88,15 +88,17 @@
 </style><a href="./index.html" class="custom-logo-link" rel="home"><img width="1935" height="360" img id="myImg" src="./wp-content/uploads/images/logo-1.png" class="custom-logo" alt="" sizes="(max-width: 1935px) 100vw, 1935px" /></a>
 <script>
 var date = new Date();
+var tagline = "He's Okay!";
 if (date.getMonth() == 5 && date.getDate() == 9)
 <!--If it's 6/9 day-->
 {
   document.getElementById("myImg").src="./wp-content/uploads/images/logo-2.png";
+  tagline = "The Acclaimed Faime of the Aimless Jaime";
 }
 </script>
 				<div class="site-branding-text">
 											<p class="site-title"><a href="./index.html" rel="home"></a></p>
-											<p class="site-description">The Acclaimed Faime of the Aimless Jaime</p>
+											<p class="site-description"><script>document.write(tagline);</script></p>
 									</div><!-- .site-branding-text -->
 
 			</div><!-- .site-branding -->
