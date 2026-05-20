@@ -28,10 +28,10 @@
 		}
 
 		if ( $heroArea && $windowWidth > '768' ) { // Set a fixed height for larger screens
-			$heroArea.css( { 'height' : Math.round( $windowWidth / 1.33 ) + 'px', 'min-height' : 'auto' } );
+			$heroArea.css( { 'height' : Math.round( $windowWidth / 3 ) + 'px', 'min-height' : 'auto' } );
 		}
 		else if ( $heroArea ) { // Set a min-height for smaller screens
-			$heroArea.css( { 'min-height' : Math.round( $windowWidth / 1.33 ) + 'px', 'height' : 'auto' } );
+			$heroArea.css( { 'min-height' : Math.round( $windowWidth / 3 ) + 'px', 'height' : 'auto' } );
 		}
 
 		$entryBackground.height( Math.round( $windowWidth / 1.33 ) + 'px' );
